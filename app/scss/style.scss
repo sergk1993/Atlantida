@@ -4,6 +4,136 @@
 @import "global";
 
 
+.header{
+    &__top{
+        display: flex;
+        align-items: center;
+        min-height: 60px;
+    }
+    &__icons{
+        margin-left: auto;
+    }
+    &__icons--facebook{
+        padding-right: 10px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 10px;
+            background-color: #aaa;
+            right: 0;
+            bottom: 4px;
+        }
+    }
+    &__icons--tweter{
+        padding-right: 10px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 10px;
+            background-color: #aaa;
+            right: 4px;
+            bottom: 4px;
+        }
+    }
+    &__slider{
+        min-height: 630px;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+    }
+    &__slider-box{
+        text-align: center;
+        padding: 190px 10px 160px 10px;
+    }
+    &__slider-text{
+        @extend %crimsonreg;
+        margin-bottom: 20px;
+    }
+    &__slider-title{
+        @extend %amsdam;
+        padding-top: 35px;
+        margin-bottom: 60px;
+        font-size: 35px;
+        line-height: 40px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url(../images/header-line.png);
+            width: 516px;
+            height: 109px;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+    }
+    &__slider-btn{
+        min-width: 148px;
+        border: 2px solid #fff;
+        color: #fff;
+        @extend %msemibold;
+        padding: 13px 0;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url(../images/header__line-2.png);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15px;
+            height: 50px;
+            top: 40px;
+        }
+    }
+    &__arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+    }
+    &__arrow-next{
+        right: 70px;
+    }
+    &__arrow-prev{
+        left: 70px;
+    }
+}
+
+.menu{
+    &__list{
+        display: flex;
+        margin-left: 100px;
+    }
+    &__lists{
+        text-transform: uppercase;
+    }
+    &__link{
+        color: #aaa;
+        @extend %mbold;
+    }
+    &__lists + .menu__lists{
+        padding-left: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import "media";
