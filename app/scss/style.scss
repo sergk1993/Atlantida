@@ -13,32 +13,7 @@
     &__icons{
         margin-left: auto;
     }
-    &__icons--facebook{
-        padding-right: 10px;
-        position: relative;
-        &::after{
-            content: "";
-            position: absolute;
-            width: 2px;
-            height: 10px;
-            background-color: #aaa;
-            right: 0;
-            bottom: 4px;
-        }
-    }
-    &__icons--tweter{
-        padding-right: 10px;
-        position: relative;
-        &::after{
-            content: "";
-            position: absolute;
-            width: 2px;
-            height: 10px;
-            background-color: #aaa;
-            right: 4px;
-            bottom: 4px;
-        }
-    }
+    
     &__slider{
         min-height: 630px;
         display: flex;
