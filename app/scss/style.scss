@@ -841,7 +841,18 @@
         }
 }
 
-
+.map{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url(../images/map.png);
+        width: 67px;
+        height: 72px;
+        top: 200px;
+        left: 650px;
+    }
+}
 
 
 
