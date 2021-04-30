@@ -14,4 +14,13 @@ $(function(){
    
         var mixer = mixitup('.portfolio__inner');
         mixer.filter('.all');
+
+
+        $('.people__slider').slick({
+            arrows:false,
+            dots:true,
+        });
+
+
+
 });

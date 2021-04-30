@@ -99,6 +99,8 @@
         transform: translateY(-50%);
         background-color: transparent;
         border: none;
+        cursor: pointer;
+        z-index: 1;
     }
     &__arrow-next{
         right: 70px;
@@ -770,5 +772,86 @@
         margin-bottom: 30px;
     }
 }
+
+.people{
+    color: #fff;
+    padding: 70px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    &__slider{
+        max-width: 870px;
+        margin: 0 auto;
+    }
+    &__img{
+            width: 105px;
+            height: 105px;
+            margin: 0 auto;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+           margin-bottom: 40px;
+        }
+        &__text{
+            font-style: italic;
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 70px;
+            padding: 0 15px;
+            position: relative;
+            &::after {
+                position: absolute;
+                transform: translateY(50%);
+                }
+            &::before{
+                content: "\e977";
+                position: absolute;
+                font-family: 'icomoon';
+                transform: translate(-100%, -50%);
+            }
+        }
+        &__title{
+            text-transform: uppercase;
+            @extend %msemibold;
+            margin-bottom: 20px;
+        }
+        &__subtext{
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+        .slick-dots li{
+            padding: 0 2px;
+        }
+        .slick-dots{
+            display: flex;
+            justify-content: center;
+        }
+        .slick-dots button{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #c5c5c5;
+            border: none;
+            font-size: 0;
+            cursor: pointer;
+        }
+        .slick-active button{
+            background-color:#fff;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import "media";
