@@ -29,4 +29,6 @@ $(function(){
             $('.header__button span').toggleClass('active')
         });
 
+
+        new WOW().init();
 });

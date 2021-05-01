@@ -38,6 +38,7 @@ function images() {
     .pipe(dest('dist/images'))
 }
 
+
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
@@ -45,6 +46,7 @@ function scripts() {
     'node_modules/mixitup/dist/mixitup.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'node_modules/masonry-layout/dist/masonry.pkgd.js',
+    'node_modules/wow.js/dist/wow.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -56,14 +58,15 @@ function scripts() {
 
 function styles() {
   return src('app/scss/style.scss')
-      .pipe(scss({outputStyle: 'compressed'}))
-      .pipe(concat('style.min.css'))
-      .pipe(autoprefixer({
-        overrideBrowserslist: ['last 10 version'],
-        grid: true
-      }))
-      .pipe(dest('app/css'))
-      .pipe(browserSync.stream())
+  .pipe(scss({outputStyle: 'compressed'}))
+  .pipe(concat('style.min.css'))
+  .pipe(autoprefixer({
+    overrideBrowserslist: ['last 10 version'],
+    grid: true,
+  }))
+  .pipe(dest('app/css'))
+  .pipe(browserSync.stream())
+  
 }
 
 function build() {
