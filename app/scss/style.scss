@@ -10,6 +10,14 @@
         align-items: center;
         min-height: 60px;
     }
+    &__button{
+        width: 25px;
+        height: 25px;
+        background-color: transparent;
+        order: 1;
+        border: none;
+        
+    }
     &__icons{
         margin-left: auto;
     }
@@ -26,7 +34,7 @@
             bottom: 4px;
         }
     }
-    &__icons--tweter{
+    &__icons-tweter{
         padding-right: 10px;
         position: relative;
         &::after{
@@ -741,13 +749,13 @@
         color: #949494;
         line-height: 25px;
     }
-    &__box-info--two{
+    &__box-info-two{
         background-color: #555557;
     }
-    &__box-info--three{
+    &__box-info-three{
         background-color: #424244;
     }
-    &__box-info--four{
+    &__box-info-four{
         background-color: #232325;
     }
 }

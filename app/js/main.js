@@ -12,15 +12,21 @@ $(function(){
             columnWidth: 10
         });
    
-        var mixer = mixitup('.portfolio__inner');
+    /*     var mixer = mixitup('.portfolio__inner');
         mixer.filter('.all');
 
-
+ */
         $('.people__slider').slick({
             arrows:false,
             dots:true,
         });
 
+        $('.header__button').on('click', function(){
+            $('.menu__list').toggleClass('menu__list-active')
+        });
 
+        $('.header__button').on('click', function(){
+            $('.header__button span').toggleClass('active')
+        });
 
 });
