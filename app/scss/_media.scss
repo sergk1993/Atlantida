@@ -144,7 +144,17 @@
     .aboutus__inner{
         padding-bottom: 50px;
     }
+    .portfolio__inner{
+        margin-left: 60px;
+    }
 }
+
+@media(max-width:900px){
+    .portfolio__box-img{
+        width: 300px;
+    }
+}
+
 
 @media(max-width:800px){
     .header__arrow{
@@ -163,6 +173,7 @@
         text-align: center;
         padding: 110px 10px 110px 10px;
     }
+    
 }
 
 
@@ -178,6 +189,15 @@
     }
     .aboutus__btntwo{
         margin: 0 7px 10px;
+    }
+    .portfolio__inner {
+        margin-left: 30px;
+    }
+    .portfolio__box-img {
+        width: 240px;
+    }
+    .portfolio__buttons-btn{
+        margin-bottom: 20px;
     }
 }
 
@@ -207,5 +227,11 @@
     }
     .history__wrapper{
         margin-bottom: 50px;
+    }
+    .portfolio__inner {
+        margin-left: 20px;
+    }
+    .portfolio__box-img {
+        width: 120px;
     }
 }
