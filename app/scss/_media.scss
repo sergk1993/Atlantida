@@ -173,7 +173,29 @@
         text-align: center;
         padding: 110px 10px 110px 10px;
     }
-    
+    .info__inner{
+        display: block;
+    }
+    .info__box{
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .info__text{
+        margin-bottom: 20px;
+    }
+    .info__btn{
+        display: block;
+        width: 130px;
+        margin: 0 auto;
+    }
+    .info__img {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 16px;
+    }
+    .info__inner{
+        text-align: center;
+    }
 }
 
 
@@ -205,6 +227,7 @@
     .prices__box-title::after{
         display: none;
     }
+   
 }
 
 
