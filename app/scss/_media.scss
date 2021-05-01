@@ -199,6 +199,12 @@
     .portfolio__buttons-btn{
         margin-bottom: 20px;
     }
+    .prices__box-title::before{
+        display: none;
+    }
+    .prices__box-title::after{
+        display: none;
+    }
 }
 
 
@@ -233,5 +239,11 @@
     }
     .portfolio__box-img {
         width: 120px;
+    }
+    .prices__num span{
+        left: 50px;
+    }
+    .prices__box {
+        margin: 0 15px 50px;
     }
 }
