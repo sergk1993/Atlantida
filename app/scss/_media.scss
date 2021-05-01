@@ -48,6 +48,22 @@
     .history__right-box:nth-child(2){
         margin-bottom: 25px;
     }
+    .footer__inner{
+        display: block;
+    }
+    .footer__input{
+        margin-left: 0;
+    }
+    .footer__box-info{
+        max-width: 100%;
+    }
+    .footer__btn{
+        margin-bottom: 50px;
+    }
+    .footer__logo-link{
+        text-align: center;
+        display: block;
+    }
 }
 
 @media(max-width:1100px){
@@ -196,6 +212,15 @@
     .info__inner{
         text-align: center;
     }
+    .map::before {
+        display: none;
+    }
+    .footer__input{
+        width: 100%;
+    }
+    .footer__input-item{
+        width: 100%;
+    }
 }
 
 
@@ -272,4 +297,8 @@
     .blog__box-info{
         overflow: auto;
     }
+    .map::before {
+        right: 100px;
+    }
+
 }
