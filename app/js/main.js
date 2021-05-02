@@ -31,4 +31,5 @@ $(function(){
 
 
         new WOW().init();
+         
 });
